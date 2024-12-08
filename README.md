@@ -11,29 +11,29 @@ Supported Nvidia Model: [click here](https://build.nvidia.com/nim)
 
 Lora and SD checkpoint: [click here](https://drive.google.com/drive/folders/1_AOVmKPLZCHogUpo9m6IPJMpWMvON7O0?usp=sharing)
 
-# limitations:
-- large file analysis would make the input token much larger and thus raising an error.
-- long chat history also makes input token much larger
-- because all of the task performed by LLM, the performance of analysis and RAG are heavily depends on LLM model you're using and text-embedding model for retrieval on RAG.
-- for default, this code use llama 70b with limited strong-detailed analysis compared to human.
+# Limitations:
+- Large file analysis would make the input token much larger and thus raising an error.
+- Long chat history also makes input token much larger
+- Because all of the task performed by LLM, the performance of analysis and RAG are heavily depends on LLM model you're using and text-embedding model for retrieval on RAG.
+- In default, this code use llama 70b with limited strong-detailed analysis compared to human.
 - RAG method are using [LightRAG](https://github.com/HKUDS/LightRAG)
 
 # How to use the demo:
-- install dependencies `pip install -r requirements.txt`
-- make sure you've cloned the latest [LightRAG](https://github.com/HKUDS/LightRAG) sub-module used in this repo. Using command `git clone https://github.com/HKUDS/LightRAG.git`
+- Install dependencies `pip install -r requirements.txt`
+- Make sure you've cloned the latest [LightRAG](https://github.com/HKUDS/LightRAG) sub-module used in this repo. Using command `git clone https://github.com/HKUDS/LightRAG.git`
 - Put [Lora and SD checkpoint](https://drive.google.com/drive/folders/1_AOVmKPLZCHogUpo9m6IPJMpWMvON7O0?usp=sharing) inside stable-diffusion/models corresponding folder. However, it's customizable on your needs but you'll have to modify the streamlit_app.py code.
 - Insert your API key inside the `bot.set_api_key("nvapi-xxxx")` to use nvidia NIM or `bot.set_api_key("hf_xxxx")` to use hf model.
-- streamlit run streamlit.py
+- To run streamlit GUI, run this on your environment command line or prompt: `streamlit run streamlit.py`
 
 # Starting guide on demo
-- send `/relearn` command to chatbot to begin re-learning on every file inside [data folder](https://github.com/MRX760/Personal-chatbot/tree/main/data)
-- use command `/rag what-to-do` to use RAG in chatbot
-- to perform analysis, simply upload file into chatbot and send this syntax: `/analyze filename.extension what-to-do` or `/analyze filename.extension` for general information analysis
+- Send `/relearn` command to chatbot to begin re-learning on every file inside [data folder](https://github.com/MRX760/Personal-chatbot/tree/main/data)
+- Use command `/rag what-to-do` to use RAG in chatbot
+- To perform analysis, simply upload file into chatbot and send this syntax: `/analyze filename.extension what-to-do` or `/analyze filename.extension` for general information analysis
 
 ![Button to upload file into chatbot](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/1.png)
 
-- to save an uploaded file into /data files for RAG, simply use `/save` command and chatbot will automatically re-learn without using `/relearn` command. 
-- to perform image generation, use english word like `generate me an image of..` or `make me an image..`. Currently, the algorithm works by detecting the patterns of user prompt in english.
+- To save an uploaded file into /data files for RAG, simply use `/save` command and chatbot will automatically re-learn without using `/relearn` command. 
+- To perform image generation, use english word like `generate me an image of..` or `make me an image..`. Currently, the algorithm works by detecting the patterns of user prompt in english.
 
 # Screenshots of Nvidia API NIM Demo
 
