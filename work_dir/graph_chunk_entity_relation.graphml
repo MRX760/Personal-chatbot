@@ -1,0 +1,1306 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;DALLAS, TEXAS&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Location of customer Washington Oxteby."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;LUZ GUDGEON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Very Negative sentiment and CSAT Score of 4, inquired about Service Outage in Corpus Christi, Texas, through Chatbot."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;LILLIS DEWHURST&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 4, inquired about Billing Question in Stockton, California, through Call-Center."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;EARLY ANDRASSY&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Very Positive sentiment and CSAT Score of 9, inquired about Billing Question in Lansing, Michigan, through Chatbot."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;JULEE O'GAVIN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 3, inquired about Billing Question in Santa Ana, California, through Chatbot."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;SERVICE OUTAGE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A type of customer interaction, mentioned in multiple locations (e.g., Fort Wayne, Kansas City, Fort Pierce, New York City&lt;SEP&gt;"Reason for customer inquiry, specifically affecting Luz Gudgeon."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2&lt;SEP&gt;chunk-9879501455f1acdaf271d71161b739be</data>
+</node>
+<node id="&quot;DENVER/CO&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Call Center location for customers, including Washington Oxteby and Zora Keelin."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;CHICAGO/IL&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Call Center location for multiple customers, including Frances Gullefant."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;FORT MYERS, FLORIDA&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Location of customer Rafe Duffitt."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;ABIGALE MORGAN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Abigale Morgan is a customer with a Very Negative experience regarding a Billing Question in Minneapolis, Minnesota."&lt;SEP&gt;"Customer with a Very Negative sentiment and CSAT Score of 4, inquired about Billing Question in Minneapolis, Minnesota, through Chatbot."</data>
+  <data key="d2">chunk-b63dfcee5fb248ca1d16ead50d8d5dd5&lt;SEP&gt;chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;ETTIE RUOFF&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Very Negative sentiment and CSAT Score of 3, inquired about Billing Question in Washington, District of Columbia, through Chatbot."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;JAYE GRIBBON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Neutral sentiment and CSAT Score of 7, inquired about Billing Question in Huntington, West Virginia, through Chatbot."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;KASSIE ELMAN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Very Negative sentiment and CSAT Score of 4, inquired about Billing Question in Charleston, South Carolina, through Web."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;BALTIMORE/MD&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Call Center location for multiple customers, such as Kassie Elman, Jaye Gribbon, and others."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;WASHINGTON OXTEBY&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 3, inquired about Billing Question in Dallas, Texas, through Chatbot."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;ILLINOIS&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A state in the US, mentioned as the location of multiple customer interactions (e.g., Chicago, Naperville, Rockford&lt;SEP&gt;"Illinois is a state where Brody Rebichon had a Negative experience regarding a Billing Question and multiple customers had interactions (Within/Above SLA)."</data>
+  <data key="d2">chunk-b63dfcee5fb248ca1d16ead50d8d5dd5&lt;SEP&gt;chunk-9879501455f1acdaf271d71161b739be</data>
+</node>
+<node id="&quot;MINETTE MUZZILLO&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Very Negative sentiment and CSAT Score of 4, inquired about Billing Question in Colorado Springs, Colorado, through Email."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;BOGEY MCREATH&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Positive sentiment and CSAT Score of 7, inquired about Billing Question in New York City, New York, through Web."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;BRODIE DOBROWSKI&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 5, inquired about Billing Question in Pittsburgh, Pennsylvania, through Chatbot."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;ELBERTINA HEWINS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Very Positive sentiment and CSAT Score of 10, inquired about Payments in Pensacola, Florida, through Call-Center."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;LOS ANGELES/CA&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Call Center location for multiple customers, including Harcourt Zoanetti, Rafe Duffitt, and others."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;RAFE DUFFITT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Very Negative sentiment and CSAT Score of 4, inquired about Billing Question in Fort Myers, Florida, through Email."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;EARTHA BONER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"A customer who interacted with the company regarding a service outage in Fort Wayne, Indiana, with a positive experience (rating: 8</data>
+  <data key="d2">chunk-9879501455f1acdaf271d71161b739be</data>
+</node>
+<node id="&quot;NANON FITZGIL&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer (incomplete information)"</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;SEPHIRA PHILIPPART&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 3, inquired about Billing Question in Madison, Wisconsin, through Web."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;SIBYLLA KEMET&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Very Negative sentiment and CSAT Score of 2, inquired about Billing Question in Tucson, Arizona, through Web."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;GARLAND CHUNEY&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 3, inquired about Billing Question in Little Rock, Arkansas, through Call-Center."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;BILLING QUESTION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Common reason for customer inquiries, affecting multiple individuals, including Frances Gullefant, Harcourt Zoanetti, and others."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;FRANCES GULLEFANT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Neutral sentiment and CSAT Score of 8, inquired about Billing Question in Charleston, West Virginia, through Chatbot."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;TRIS BENT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Positive sentiment and CSAT Score of 8, inquired about Billing Question in Tuscaloosa, Alabama, through Web."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;MADELENA PINNOCK&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"A customer who interacted with the company regarding a service outage in Fort Pierce, Florida, with a negative experience (rating: 4</data>
+  <data key="d2">chunk-9879501455f1acdaf271d71161b739be</data>
+</node>
+<node id="&quot;CHARLESTON, WEST VIRGINIA&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Location of customer Frances Gullefant."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;CHARLES SANDISON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Neutral sentiment and CSAT Score of 5, inquired about Billing Question in Fort Pierce, Florida, through Email."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;QUINTILLA HOURSTON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 6, inquired about Payments in Des Moines, Iowa, through Call-Center."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;CAROLJEAN BISCHOP&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 3, inquired about Billing Question in Nashville, Tennessee, through Web."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;HONOLULU, HAWAII&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Location of customer Harcourt Zoanetti."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;ZORA KEELIN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 3, inquired about Billing Question in Lubbock, Texas, through Call-Center."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;MAGGI SIMPSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Positive sentiment and CSAT Score of 9, inquired about Payments in San Francisco, California, through Call-Center."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;DELMOR MCKLEOD&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 6, inquired about Billing Question in El Paso, Texas, through Web."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;PAYMENTS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Reason for customer inquiries, affecting individuals such as Elbertina Hewins, Maggi Simpson, and JYD-67455825."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;HARCOURT ZOANETTI&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer with a Negative sentiment and CSAT Score of 5, inquired about Billing Question in Honolulu, Hawaii, through Call-Center."</data>
+  <data key="d2">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</node>
+<node id="&quot;JANE DOE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jane Doe is a Marketing Specialist in the Marketing department, hired on 20/08/2023 with an annual salary of $50,000."&lt;SEP&gt;"Jane Doe is a customer who made an order on 01/01/2024, purchasing 1 item at $29.99."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;SARAH GARCIA&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Sarah Garcia is a Sales Coordinator in the Sales department, hired on 17/06/2023 with an annual salary of $50,000."&lt;SEP&gt;"Sarah Garcia is a customer who made an order on 17/01/2024, purchasing 1 item at $149.99."&lt;SEP&gt;"Sarah Garcia is an individual associated with a transaction on 17/01/2024, with a total value of 164.989, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;DANIEL WILSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Daniel Wilson is a Senior Production Supervisor in the Production department, hired on 08/09/2023 with an annual salary of $60,000."&lt;SEP&gt;"Daniel Wilson is a customer who made an order on 15/01/2024, purchasing 5 items at $29.99 each."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;MICHAEL GARCIA&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Michael Garcia is a customer who made an order on 11/01/2024, purchasing 2 items at $79.99 each."&lt;SEP&gt;"Michael Garcia is an HR Assistant in the Human Resources department, hired on 05/07/2023 with an annual salary of $42,000."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;JENNIFER DAVIS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jennifer Davis is a QA Manager in the Quality Assurance department, hired on 17/01/2023 with an annual salary of $75,000."&lt;SEP&gt;"Jennifer Davis is a customer who made an order on 10/01/2024, purchasing 5 items at $29.99 each."&lt;SEP&gt;"Jennifer Davis is an individual associated with a transaction on 23/01/2024, with a total value of 219.989, indicating a financial activity."&lt;SEP&gt;"Jennifer Davis is an individual associated with a transaction on 31/01/2024, with a total value of 153.978, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;JESSICA GONZALEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jessica Gonzalez is a Sales Manager in the Sales department, hired on 03/05/2023 with an annual salary of $72,000."&lt;SEP&gt;"Jessica Gonzalez is a customer who made an order on 07/01/2024, purchasing 1 item at $129.99."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;CUSTOMER SERVICE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Customer Service is a department with multiple employees, including Customer Service Manager, Customer Service Representative, Senior Customer Service Representative, and Customer Service Associate."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;HUMAN RESOURCES&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Human Resources is a department with multiple employees, including HR Manager, HR Coordinator, HR Assistant, and HR Generalist."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;DANIEL MARTINEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Daniel Martinez is a Customer Service Representative in the Customer Service department, hired on 05/11/2023 with an annual salary of $45,000."&lt;SEP&gt;"Daniel Martinez is a customer who made an order on 04/01/2024, purchasing 3 items at $39.99 each."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;DAVID WILSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"David Wilson is a Senior IT Specialist in the Information Technology department, hired on 30/08/2023 with an annual salary of $70,000."&lt;SEP&gt;"David Wilson is an IT Specialist in the Information Technology department, hired on 12/09/2023 with an annual salary of $60,000."&lt;SEP&gt;"David Wilson is a customer who made an order on 03/01/2024, purchasing 1 item at $149.99."&lt;SEP&gt;"David Wilson is a customer who made an order on 13/01/2024, purchasing 1 item at $149.99."&lt;SEP&gt;"David Wilson is an individual associated with a transaction on 21/01/2024, with a total value of 142.989, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;MATTHEW HERNANDEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Matthew Hernandez is a Junior IT Specialist in the Information Technology department, hired on 20/09/2023 with an annual salary of $48,000."&lt;SEP&gt;"Matthew Hernandez is an individual associated with a transaction on 18/01/2024, with a total value of 153.978, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;JENNIFER MARTINEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jennifer Martinez is a Senior QA Analyst in the Quality Assurance department, hired on 22/02/2023 with an annual salary of $62,000."&lt;SEP&gt;"Jennifer Martinez is a customer who made an order on 15/01/2024, purchasing 2 items at $79.99 each."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;AMY HERNANDEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Amy Hernandez is a Marketing Coordinator in the Marketing department, hired on 28/04/2023 with an annual salary of $48,000."&lt;SEP&gt;"Amy Hernandez is a customer who made an order on 11/01/2024, purchasing 3 items at $49.99 each."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;MATTHEW WILSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Matthew Wilson is a customer who made an order on 08/01/2024, purchasing 4 items at $19.99 each."&lt;SEP&gt;"Matthew Wilson is an IT Manager in the Information Technology department, hired on 08/08/2023 with an annual salary of $75,000."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;RESEARCH AND DEVELOPMENT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Research and Development is a department with multiple employees, including R&amp;D Manager, R&amp;D Engineer, R&amp;D Technician, and R&amp;D Assistant."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;MARKETING&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Marketing is a department with multiple employees, including Marketing Manager, Marketing Specialist, Marketing Coordinator, and Marketing Assistant."&lt;SEP&gt;"Marketing is a department within the company, responsible for tasks such as Market Research, Content Creation, Social Media Planning, and Campaign Analysis."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-b883069f8adcb9fcadd7de602924ff41</data>
+</node>
+<node id="&quot;CHRISTOPHER THOMAS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Christopher Thomas is a Production Supervisor in the Production department, hired on 22/07/2023 with an annual salary of $52,000."&lt;SEP&gt;"Christopher Thomas is a customer who made an order on 05/01/2024, purchasing 1 item at $89.99."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;MICHAEL JOHNSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Michael Johnson is a Financial Analyst in the Finance department, hired on 10/10/2023 with an annual salary of $55,000."&lt;SEP&gt;"Michael Johnson is a Production Assistant in the Production department, hired on 25/10/2023 with an annual salary of $40,000."&lt;SEP&gt;"Michael Johnson is a customer who made an order on 02/01/2024, purchasing 3 items at $99.99 each."&lt;SEP&gt;"Michael Johnson is an individual associated with a transaction on 20/01/2024, with a total value of 175.978, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;EMILY RODRIGUEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Emily Rodriguez is an Operations Assistant in the Operations department, hired on 03/12/2023 with an annual salary of $42,000."&lt;SEP&gt;"Emily Rodriguez is an individual associated with a transaction on 18/01/2024, with a total value of 131.967, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;MICHAEL SMITH&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Michael Smith is a customer who made an order on 16/01/2024, purchasing 3 items at $49.99 each."&lt;SEP&gt;"Michael Smith is an HR Generalist in the Human Resources department, hired on 17/07/2023 with an annual salary of $50,000."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;CHRISTOPHER RODRIGUEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Christopher Rodriguez is a Senior Financial Analyst in the Finance department, hired on 12/11/2023 with an annual salary of $60,000."&lt;SEP&gt;"Christopher Rodriguez is a customer who made an order on 12/01/2024, purchasing 1 item at $129.99."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;AMANDA MARTINEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Amanda Martinez is a customer who made an order on 08/01/2024, purchasing 1 item at $149.99."&lt;SEP&gt;"Amanda Martinez is an Operations Coordinator in the Operations department, hired on 29/10/2023 with an annual salary of $48,000."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;PRODUCTION&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Production is a department with multiple employees, including Production Manager, Production Supervisor, Senior Production Supervisor, and Production Assistant."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;FINANCE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Finance is a department with multiple employees, including Finance Manager, Financial Analyst, and Junior Financial Analyst."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;LISA TAYLOR&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Lisa Taylor is a customer who made an order on 03/01/2024, purchasing 2 items at $79.99 each."&lt;SEP&gt;"Lisa Taylor is an Operations Manager in the Operations department, hired on 30/06/2023 with an annual salary of $65,000."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;EMILY BROWN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Emily Brown is a Sales Representative in the Sales department, hired on 25/03/2023 with an annual salary of $48,000."&lt;SEP&gt;"Emily Brown is a customer who made an order on 02/01/2024, purchasing 4 items at $19.99 each."&lt;SEP&gt;"Emily Brown is an individual associated with a transaction on 22/01/2024, with a total value of 153.978, indicating a financial activity."&lt;SEP&gt;"Emily Brown is an individual associated with a transaction on 30/01/2024, with a total value of 87.956, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;DANIEL DAVIS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Daniel Davis is a Customer Service Associate in the Customer Service department, hired on 06/04/2023 with an annual salary of $40,000."&lt;SEP&gt;"Daniel Davis is an individual associated with a transaction on 19/01/2024, with a total value of 219.989, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;JESSICA JOHNSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jessica Johnson is a Marketing Assistant in the Marketing department, hired on 10/04/2023 with an annual salary of $42,000."&lt;SEP&gt;"Jessica Johnson is a customer who made an order on 16/01/2024, purchasing 1 item at $129.99."&lt;SEP&gt;"Jessica Johnson is an individual associated with a transaction on 17/01/2024, with a total value of 142.989, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;SARAH SMITH&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Sarah Smith is a customer who made an order on 13/01/2024, purchasing 2 items at $69.99 each."&lt;SEP&gt;"Sarah Smith is an Assistant Operations Manager in the Operations department, hired on 15/10/2023 with an annual salary of $55,000."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;JAMES JOHNSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"James Johnson is a Customer Service Manager in the Customer Service department, hired on 12/03/2023 with an annual salary of $68,000."&lt;SEP&gt;"James Johnson is a customer who made an order on 09/01/2024, purchasing 2 items at $69.99 each."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;QUALITY ASSURANCE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Quality Assurance is a department with multiple employees, including QA Manager, QA Analyst, Senior QA Analyst, and QA Assistant."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;SALES&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Sales is a department with multiple employees, including Sales Manager, Sales Representative, Senior Sales Representative, and Sales Coordinator."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;KIMBERLY GARCIA&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Kimberly Garcia is a QA Analyst in the Quality Assurance department, hired on 14/02/2023 with an annual salary of $56,000."&lt;SEP&gt;"Kimberly Garcia is a customer who made an order on 05/01/2024, purchasing 1 item at $199.99."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;JOHN SMITH&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"John Smith is a customer who made an order on 01/01/2024, purchasing 2 items at $49.99 each."&lt;SEP&gt;"John Smith is an HR Manager in the Human Resources department, hired on 15/05/2023 with an annual salary of $60,000."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;JENNIFER SMITH&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jennifer Smith is an R&amp;D Assistant in the Research and Development department, hired on 30/07/2023 with an annual salary of $42,000."&lt;SEP&gt;"Jennifer Smith is an individual associated with a transaction on 19/01/2024, with a total value of 164.945, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;DAVID BROWN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"David Brown is a Junior Financial Analyst in the Finance department, hired on 26/11/2023 with an annual salary of $48,000."&lt;SEP&gt;"David Brown is a customer who made an order on 17/01/2024, purchasing 4 items at $19.99 each."&lt;SEP&gt;"David Brown is an individual associated with a transaction on 17/01/2024, with a total value of 87.956, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;MATTHEW JOHNSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Matthew Johnson is a Senior Customer Service Representative in the Customer Service department, hired on 28/03/2023 with an annual salary of $50,000."&lt;SEP&gt;"Matthew Johnson is a customer who made an order on 14/01/2024, purchasing 3 items at $39.99 each."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;LAURA BROWN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Laura Brown is a customer who made an order on 09/01/2024, purchasing 3 items at $39.99 each."&lt;SEP&gt;"Laura Brown is an R&amp;D Manager in the Research and Development department, hired on 25/06/2023 with an annual salary of $70,000."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;MELISSA LOPEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Melissa Lopez is a Marketing Manager in the Marketing department, hired on 10/06/2023 with an annual salary of $65,000."&lt;SEP&gt;"Melissa Lopez is a customer who made an order on 06/01/2024, purchasing 2 items at $79.99 each."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;INFORMATION TECHNOLOGY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Information Technology is a department with multiple employees, including IT Manager, IT Specialist, Senior IT Specialist, and Junior IT Specialist."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;EMILY DAVIS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Emily Davis is a customer who made an order on 14/01/2024, purchasing 1 item at $199.99."&lt;SEP&gt;"Emily Davis is an R&amp;D Technician in the Research and Development department, hired on 01/06/2023 with an annual salary of $48,000."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;DANIEL SMITH&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Daniel Smith is a Production Manager in the Production department, hired on 30/09/2023 with an annual salary of $72,000."&lt;SEP&gt;"Daniel Smith is a customer who made an order on 10/01/2024, purchasing 1 item at $199.99."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;RICHARD PEREZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Richard Perez is a Finance Manager in the Finance department, hired on 18/11/2023 with an annual salary of $70,000."&lt;SEP&gt;"Richard Perez is a customer who made an order on 07/01/2024, purchasing 3 items at $49.99 each."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;OPERATIONS&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Operations is a department with multiple employees, including Operations Manager, Operations Coordinator, and Assistant Operations Manager."</data>
+  <data key="d2">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</node>
+<node id="&quot;JESSICA MARTINEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jessica Martinez is a QA Assistant in the Quality Assurance department, hired on 20/03/2023 with an annual salary of $42,000."&lt;SEP&gt;"Jessica Martinez is a Senior Sales Representative in the Sales department, hired on 25/05/2023 with an annual salary of $55,000."&lt;SEP&gt;"Jessica Martinez is a customer who made an order on 12/01/2024, purchasing 4 items at $19.99 each."&lt;SEP&gt;"Jessica Martinez is an individual associated with a transaction on 20/01/2024, with a total value of 164.967, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-209bb616b99a2ff528c88b8afd0e2ddf&lt;SEP&gt;chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="**NO DIRECT ENTITIES FOUND**">
+  <data key="d0">**N/A**</data>
+  <data key="d1">**Text primarily consists of a product inventory list.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**INVENTORY UPDATES**">
+  <data key="d0">**EVENT**</data>
+  <data key="d1">**Regular or periodic events when the inventory quantities are adjusted, as indicated by the data.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**PRODUCT DEVELOPMENT TEAM**">
+  <data key="d0">**ORGANIZATION**</data>
+  <data key="d1">**Implied team responsible for creating the listed products.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**SALES EVENTS**">
+  <data key="d0">**EVENT**</data>
+  <data key="d1">**Occurrences of product sales, leading to the 'Number of Units Sold' figures.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**PRODUCT LAUNCHES**">
+  <data key="d0">**EVENT**</data>
+  <data key="d1">**Implied events for each product (P101-P146) when they were initially released to the market.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**WAREHOUSE/INVENTORY MANAGEMENT**">
+  <data key="d0">**ORGANIZATION**</data>
+  <data key="d1">**Department or system overseeing the storage and tracking of products, implied by the inventory data.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**PRODUCT MANAGEMENT TEAM/COMPANY**">
+  <data key="d0">**ORGANIZATION**</data>
+  <data key="d1">**This entity represents the implied organization managing the product inventory, though not explicitly named in the text.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**PROCUREMENT SESSIONS**">
+  <data key="d0">**EVENT**</data>
+  <data key="d1">**Events or periods when the Purchasing Department acquires new stock, reflected in 'Purchase/Stock in' numbers.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**PURCHASING DEPARTMENT**">
+  <data key="d0">**ORGANIZATION**</data>
+  <data key="d1">**Team or division responsible for buying or stocking inventory, inferred from 'Purchase/Stock in' column.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**NO DIRECT ENTITIES FOUND FOR PERSON, GEO**">
+  <data key="d0">**N/A**</data>
+  <data key="d1">**Text primarily consists of a product inventory list.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**SALES DEPARTMENT**">
+  <data key="d0">**ORGANIZATION**</data>
+  <data key="d1">**Entity handling the sales of the inventory products, assumed within the company.**</data>
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</node>
+<node id="**INVENTORY PRODUCTS (P101-P146)**">
+  <data key="d2">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+  <data key="d1">**The organization is responsible for managing the inventory of these products.**</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;JACQUELINE THOMPSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Results-oriented Engineering Executive with a proven track record of optimizing project outcomes, skilled in strategic project management and team leadership."</data>
+  <data key="d2">chunk-7a9fad0e0cedaecb627cc67130c92924</data>
+</node>
+<node id="&quot;TOM&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Tom participates in Prototype Testing, a project under Engineering, with the project spanning from 23/02/2024 to 21/03/2024 and having a completion status of 0%."&gt;</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;QUENTIN'S PROJECT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An unspecified project associated with Quentin, occurring between 29/03/2024 and 18/04/2024, with a noted completion status of 0%. The project's nature and department within Engineering are not specified."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;RACHEL&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Rachel is a person linked to a task or project in Product Design within the Engineering domain, with defined duration (02/01/2024 - 27/01/2024) and a completion rate (20%)."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;PROTOTYPE TESTING PROJECT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A project or phase in Prototype Testing, assigned to Tom, running from 23/02/2024 to 21/03/2024, and showing a 0% completion rate."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;PRODUCT DESIGN PROJECT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A project in the Product Design department, undertaken by Rachel, from 02/01/2024 to 27/01/2024, achieving a 20% completion rate by the end date."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;PROTOTYPE TESTING&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Prototype Testing is a department or project phase within the Engineering organization, where Tom is working on a task (23/02/2024 - 21/03/2024) with a 0% completion rate."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;SAM&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Sam is involved in a project related to System Integration within Engineering, showing a specific timeframe (02/02/2024 - 24/02/2024) and a completion status (0%)."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;SYSTEM INTEGRATION&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"System Integration is a department within the Engineering organization, where Sam is involved in a project (02/02/2024 - 24/02/2024) with a 0% completion status."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;SYSTEM INTEGRATION PROJECT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A project within the System Integration department, led by Sam, spanning from 02/02/2024 to 24/02/2024, with a completion status of 0%."&gt;</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;ENGINEERING&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Engineering is the overarching organization within which various projects (Product Design, System Integration, Prototype Testing) are being undertaken by different individuals (Rachel, Sam, Tom, and possibly Quentin, though Quentin's department is not specified)."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;QUENTIN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Quentin is an individual associated with a task or project, with specified start and end dates (29/03/2024 - 18/04/2024) and a completion status (0%)."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;PRODUCT DESIGN&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Product Design is a sub-unit or department within the Engineering organization, where Rachel is working on a project (02/01/2024 - 27/01/2024) with a 20% completion rate."</data>
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</node>
+<node id="&quot;ALICE&quot;">
+  <data key="d2">chunk-b883069f8adcb9fcadd7de602924ff41</data>
+  <data key="d1">"Alice is part of the Marketing department, working on Market Research."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;ENGINEERING &quot;">
+  <data key="d2">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+  <data key="d1">"Rachel works within the Engineering organization, specifically in Product Design, indicating a clear departmental affiliation."!</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;DANIEL HERNANDEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Daniel Hernandez is an individual associated with a transaction on 23/01/2024, with a total value of 131.967, indicating a financial activity."&lt;SEP&gt;"Daniel Hernandez is an individual associated with a transaction on 31/01/2024, with a total value of 164.989, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</node>
+<node id="&quot;ORDER ID: 1066&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A specific transaction event associated with Sarah Gonzalez, occurring between 02/02/2024 and 06/02/2024, with a total amount of $175.978."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;MICHAEL MARTINEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Michael Martinez is an individual associated with a transaction on 01/02/2024, with a total value of 131.967, indicating a financial activity."&lt;SEP&gt;"Michael Martinez is an individual associated with a transaction on 24/01/2024, with a total value of 175.978, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</node>
+<node id="&quot;ORDER ID: 1067&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A specific transaction event associated with Matthew Smith, occurring between 03/02/2024 and 06/02/2024, with a total amount of $164.967."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;MICHAEL DAVIS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Michael Davis is an individual associated with a transaction on 28/01/2024, with a total value of 219.989, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</node>
+<node id="&quot;ORDER ID: 1068&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A specific transaction event associated with Emily Johnson, occurring between 04/02/2024 and 05/02/2024, with a total amount of $142.989."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;SARAH ANDERSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Sarah Anderson is a customer who made an order on 04/01/2024, purchasing 2 items at $69.99 each."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;JESSICA SMITH&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jessica Smith is an individual associated with a transaction on 28/01/2024, with a total value of 164.945, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</node>
+<node id="&quot;ORDER ID: 1069&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A specific transaction event associated with Daniel Brown, occurring between 04/02/2024 and 08/02/2024, with a total amount of $87.956."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;DAVID MARTINEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"David Martinez is an individual associated with a transaction on 29/01/2024, with a total value of 175.978, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</node>
+<node id="&quot;ORDER ID: 1070&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A specific transaction event associated with Jennifer Hernandez, occurring between 04/02/2024 and 07/02/2024, with a total amount of $164.989."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;ORDER NO. 1001&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Order No. 1001 is a sales transaction made on 01/01/2024, involving 2 items at $49.99 each."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;02/02/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A date associated with the start of Sarah Gonzalez's transaction (Order ID: 1066)."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;WILLIAM HERNANDEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"William Hernandez is a customer who made an order on 06/01/2024, purchasing 5 items at $29.99 each."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;01/02/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A date associated with the start of multiple transactions (Order IDs: 1064, 1065)."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;ORDER NO. 1002&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Order No. 1002 is a sales transaction made on 01/01/2024, involving 1 item at $29.99."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;03/02/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A date associated with the end of David Rodriguez's transaction (Order ID: 1065) and the start of Matthew Smith's transaction (Order ID: 1067)."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;ORDER NO. 1003&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Order No. 1003 is a sales transaction made on 02/01/2024, involving 3 items at $99.99 each."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;04/02/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A date associated with the start of multiple transactions (Order IDs: 1068, 1069, 1070)."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;ORDER NO. 1034&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Order No. 1034 is a sales transaction made on 17/01/2024, involving 1 item at $149.99."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;05/02/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A date associated with the end of Jessica Wilson's transaction (Order ID: 1064) and Emily Johnson's transaction (Order ID: 1068)."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;01/01/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"01/01/2024 is the date when multiple orders (1001, 1002) were made."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;DAVID RODRIGUEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"David Rodriguez is an individual associated with a transaction (Order ID: 1065) dated between 01/02/2024 and 03/02/2024, with a total amount of $164.945."&lt;SEP&gt;"David Rodriguez is an individual associated with a transaction on 01/02/2024, with a total value of 164.945, indicating a financial activity."&lt;SEP&gt;"David Rodriguez is an individual associated with a transaction on 25/01/2024, with a total value of 164.967, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;06/02/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A date associated with the end of Sarah Gonzalez's transaction (Order ID: 1066) and Matthew Smith's transaction (Order ID: 1067)."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;02/01/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"02/01/2024 is the date when multiple orders (1003, 1004) were made."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;17/01/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"17/01/2024 is the date when multiple orders (1033, 1034) were made."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;07/02/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A date associated with the end of Jennifer Hernandez's transaction (Order ID: 1070)."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;SARAH GONZALEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Sarah Gonzalez is an individual associated with a transaction (Order ID: 1066) dated between 02/02/2024 and 06/02/2024, with a total amount of $175.978."&lt;SEP&gt;"Sarah Gonzalez is an individual associated with a transaction on 25/01/2024, with a total value of 142.989, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;08/02/2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A date associated with the end of Daniel Brown's transaction (Order ID: 1069)."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;USD (UNITED STATES DOLLAR)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"USD is the currency used for all the transactions listed."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;UNKNOWN ORGANIZATION (POTENTIALLY AN E-COMMERCE PLATFORM OR A STORE)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"This organization is inferred as the context in which the transactions (Order IDs: 1064-1070) between individuals (Jessica Wilson, David Rodriguez, etc.) and the organization itself took place. It is involved in processing transactions and managing customer data."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;$199.99&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The amount associated with Jessica Wilson's transaction (Order ID: 1064) before additional costs."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;TAX (10%)&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Tax is a concept applied to all orders, calculated at a 10% rate of the retail price."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;EMILY JOHNSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Emily Johnson is an individual associated with a transaction (Order ID: 1068) dated between 04/02/2024 and 05/02/2024, with a total amount of $142.989."&lt;SEP&gt;"Emily Johnson is an individual associated with a transaction on 26/01/2024, with a total value of 164.989, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;$19.999&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The additional cost associated with Jessica Wilson's transaction (Order ID: 1064)."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;RETAIL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Retail is the industry or sector in which these sales transactions are taking place."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;JENNIFER HERNANDEZ&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jennifer Hernandez is an individual associated with a transaction (Order ID: 1070) dated between 04/02/2024 and 07/02/2024, with a total amount of $164.989."&lt;SEP&gt;"Jennifer Hernandez is an individual associated with a transaction on 27/01/2024, with a total value of 131.967, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;E-COMMERCE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"E-commerce is the platform or medium through which these sales transactions were made."</data>
+  <data key="d2">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</node>
+<node id="&quot;DANIEL BROWN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Daniel Brown is an individual associated with a transaction (Order ID: 1069) dated between 04/02/2024 and 08/02/2024, with a total amount of $87.956."&lt;SEP&gt;"Daniel Brown is an individual associated with a transaction on 27/01/2024, with a total value of 153.978, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;JESSICA WILSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Jessica Wilson is an individual associated with a transaction (Order ID: 1064) dated between 01/02/2024 and 05/02/2024, with a total amount of $219.989."&lt;SEP&gt;"Jessica Wilson is an individual associated with a transaction on 01/02/2024, with a total value of 219.989, indicating a financial activity."&lt;SEP&gt;"Jessica Wilson is an individual associated with a transaction on 24/01/2024, with a total value of 164.945, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;VARIOUS GEOGRAPHIC LOCATIONS (IMPLIED BY TRANSACTION DATES AND POTENTIAL CUSTOMER LOCATIONS)&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"These locations are implied by the transaction dates and the assumption that customers (Jessica Wilson, David Rodriguez, etc.) might be located in different geographic areas. However, no specific location is mentioned in the text."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;UNKNOWN ORGANIZATION&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The organization is implied to be the entity facilitating the transactions, but no explicit name is provided in the text. It is associated with multiple financial activities across various dates."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</node>
+<node id="&quot;MATTHEW SMITH&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Matthew Smith is an individual associated with a transaction (Order ID: 1067) dated between 03/02/2024 and 06/02/2024, with a total amount of $164.967."&lt;SEP&gt;"Matthew Smith is an individual associated with a transaction on 26/01/2024, with a total value of 87.956, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1&lt;SEP&gt;chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;SARAH JOHNSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Sarah Johnson is an individual associated with a transaction on 21/01/2024, with a total value of 87.956, indicating a financial activity."&lt;SEP&gt;"Sarah Johnson is an individual associated with a transaction on 29/01/2024, with a total value of 164.967, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</node>
+<node id="&quot;TRANSACTIONS (ORDER IDS: 1064-1070)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"These are specific events of transactions occurring between 01/02/2024 and 08/02/2024, involving various individuals and an unknown organization."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;ORDER ID: 1065&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A specific transaction event associated with David Rodriguez, occurring between 01/02/2024 and 03/02/2024, with a total amount of $164.945."</data>
+  <data key="d2">chunk-200ab1decb95452bea33ff22aab55651</data>
+</node>
+<node id="&quot;MATTHEW GARCIA&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Matthew Garcia is an individual associated with a transaction on 22/01/2024, with a total value of 164.989, indicating a financial activity."&lt;SEP&gt;"Matthew Garcia is an individual associated with a transaction on 30/01/2024, with a total value of 142.989, indicating a financial activity."</data>
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</node>
+<node id="&quot;UNKNOWN ORGANIZATION&quot;\">
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+  <data key="d1">"[Each Person's Name] is associated with a transaction facilitated by the organization on [Date]."\</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;[EACH PERSON'S NAME]&quot;\">
+  <data key="d2">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+  <data key="d1">"[Each Person's Name] is associated with a transaction facilitated by the organization on [Date]."\</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;DRIVER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Driver is an individual updating order lists, confirming deliveries, and interacting with the Commsult system through a mobile app, triggering notifications."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;DRAG-AND-DROP FEATURE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"A feature of the Driver Mobile App allowing users to reorder the Order List by dragging and dropping Order Cards."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot; ORDER&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Refers to the tasks or deliveries managed through the Driver Mobile App."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;KATALON&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A tool used for mobile testing and cloud regression testing."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;NOTIFICATIONS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Alerts sent to Users in response to Driver interactions (order updates, confirmations) through the Commsult system."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;AUTHORIZATION TOKEN&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"A token (xxxxxxxxyyyyyzzzzz) used for authorization in API requests, ensuring valid access to Commsult API endpoints."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;ORDER LIST&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"A collection of orders created by an Analyst and received by users of the Driver Mobile App."&lt;SEP&gt;"A collection of orders managed by the Commsult system, updated by Drivers and triggering notifications to Users."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c&lt;SEP&gt;chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;COMMSULT WEBSITE&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"The website (commsult.com) where API interactions occur, hosting endpoints for order updates and confirmations."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;DELIVERY CONFIRMATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The process of confirming the completion of a delivery, facilitated by the Driver Mobile App."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;JIRA&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A platform employed for defect tracking and management, with a defined lifecycle for bugs and defects."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;ORDER CARD&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"A visual representation of an individual order within the Order List on the Driver Mobile App."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;WEBHOOKS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Automated notifications sent from the Commsult API to the WMS API in response to order updates and confirmations."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;PRECONDITION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A prerequisite step or condition that must be met before proceeding with API interactions or test scenarios."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;WMS (WAREHOUSE MANAGEMENT SYSTEM)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"WMS is an organization with an API, integrated with Commsult, handling webhooks and notifications for order updates and confirmations."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;COMMSULT API&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The Commsult API is an event trigger point for order updates and confirmations, sending webhooks to WMS API and returning status codes (200, 401, 422) based on the request validity and authorization."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;USABILITY TESTING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A method of testing the Driver Mobile App's user experience, conducted via the Maze platform."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;PM&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Project Manager, a stakeholder in the approval and sign-off process for the document."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;DRIVER MOBILE APP&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A mobile application used by drivers, with features including order management and delivery confirmation."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;TEST SCENARIOS (B-004, B-005, ...)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Specific test cases designed to verify the functionality of the Commsult API in various scenarios (positive, negative)."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;USER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"An individual, potentially a driver, who uses the driver mobile app to manage orders and interact with the app's features."&lt;SEP&gt;"The User is an individual who has logged in, distributes orders to drivers, and receives notifications about order updates and confirmations through the system."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c&lt;SEP&gt;chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;ORDER UPDATE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Order Update is an event triggered by the Driver, leading to notifications and webhooks being sent to WMS API, requiring a valid request body and authorization."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;REGRESSION TESTING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A type of software testing, in this case, performed using Katalon for the Driver Mobile App."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;DEVELOPERS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Team of individuals responsible for developing the application, stakeholders in the approval and sign-off process."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;ANALYST&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"A person responsible for creating order lists, which are then received by users of the driver mobile app."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;API ENDPOINTS (E.G., /ORDER/UPDATE, /ORDER/CONFIRM)&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"Specific URLs within the Commsult API where requests are sent for order updates and confirmations."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;MOBILE APP&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"The mobile application used by Drivers to update order lists and confirm deliveries, interacting with the Commsult API."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;ORDER CONFIRMATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Order Confirmation is an event triggered by the Driver, leading to notifications and webhooks being sent to WMS API, requiring a complete request body and proper authorization."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;COMMSULT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Commsult is an organization involved in software development and testing, with a mentioned website (https://commsult.com) and a system for managing orders."&lt;SEP&gt;"Commsult is an organization with an API (Application Programming Interface) and a website (commsult.com), involved in order management and notifications."&lt;SEP&gt;"Commsult is the project name for a SOFTWARE QA TESTER PROJECT, indicating a specific organizational context for the test plan."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c&lt;SEP&gt;chunk-576ce2166e30bd750be5ea86694955c9&lt;SEP&gt;chunk-ac94e0f6a49f1d590b6ecb6614c394a0</data>
+</node>
+<node id="&quot;DEFECT LIFECYCLE&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The process of identifying, reporting, prioritizing, fixing, verifying, and closing defects, as managed on JIRA."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;QA TEAM&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Quality Assurance Team, responsible for testing and verifying fixes, stakeholders in the approval and sign-off process."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;TEST RAIL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A platform used for managing manual test cases."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;REQUEST BODY&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The content of a request sent to the Commsult API, containing necessary data (e.g., driver_id, order_list) for processing order updates and confirmations."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;STAKEHOLDERS&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Individuals or groups with an interest in the Testing Document's approval and sign-off, including PM, Developers, and QA Team."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;TESTING DOCUMENT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The document outlining test plans, subject to approval and sign-off by stakeholders."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;MAZE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A platform utilized for conducting usability testing with participant feedback."</data>
+  <data key="d2">chunk-2e595f8d43f4e1793c22e8152f2f983e</data>
+</node>
+<node id="&quot;STATUS CODES (200, 401, 422)&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Numeric codes returned by the Commsult API indicating the outcome of a request (success, unauthorized, validation error)."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;ORDER CONFIRMATION DATA&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Specific data related to confirmed orders, sent as part of the request body in API interactions for order confirmations."</data>
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</node>
+<node id="&quot;WMS&quot;">
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+  <data key="d1">"Commsult and WMS have an integrated API system, where Commsult sends webhooks to WMS API for order updates and confirmations."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;STATUS CODES&quot;">
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+  <data key="d1">"The Commsult API returns status codes indicating the outcome of requests, providing feedback on success or errors."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;API ENDPOINTS&quot;">
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+  <data key="d1">"The Commsult API manages specific endpoints for order updates and confirmations, each handling distinct requests."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;WMS API&quot;">
+  <data key="d2">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+  <data key="d1">"Webhooks are sent from the Commsult API to the WMS API, facilitating integrated order management."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;CHICAGO/IL&quot;" target="&quot;FRANCES GULLEFANT&quot;">
+  <data key="d3">12.0</data>
+  <data key="d4">"Frances Gullefant's inquiry was handled by the Chicago/IL Call Center."&lt;&gt; "customer service, location association"</data>
+  <data key="d5">6</data>
+  <data key="d6">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</edge>
+<edge source="&quot;LOS ANGELES/CA&quot;" target="&quot;HARCOURT ZOANETTI&quot;">
+  <data key="d3">12.0</data>
+  <data key="d4">"Harcourt Zoanetti's inquiry was handled by the Los Angeles/CA Call Center."&lt;&gt; "customer service, location association"</data>
+  <data key="d5">6</data>
+  <data key="d6">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</edge>
+<edge source="&quot;BILLING QUESTION&quot;" target="&quot;HARCOURT ZOANETTI&quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"Harcourt Zoanetti's inquiry was also about Billing Question."&lt;&gt; "inquiry reason, customer association"</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</edge>
+<edge source="&quot;BILLING QUESTION&quot;" target="&quot;FRANCES GULLEFANT&quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"Frances Gullefant's inquiry was about Billing Question."&lt;&gt; "inquiry reason, customer association"</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-bfefa7af5a2289ff78975739f409a4d2</data>
+</edge>
+<edge source="&quot;JANE DOE&quot;" target="&quot;MARKETING&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Jane Doe is a Marketing Specialist in the Marketing department."</data>
+  <data key="d5">"departmental affiliation, specialization"</data>
+  <data key="d6">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</edge>
+<edge source="&quot;JANE DOE&quot;" target="&quot;ORDER NO. 1002&quot;">
+  <data key="d3">17.0</data>
+  <data key="d4">"Jane Doe is associated with Order No. 1002, indicating a customer-order relationship."&lt;SEP&gt;"Order No. 1002 is associated with Jane Doe, indicating a transaction-customer relationship."</data>
+  <data key="d5">"customer-order"&lt;SEP&gt;"transaction-customer"</data>
+  <data key="d6">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</edge>
+<edge source="&quot;HUMAN RESOURCES&quot;" target="&quot;JOHN SMITH&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"John Smith is the HR Manager in the Human Resources department."</data>
+  <data key="d5">"departmental affiliation, management"</data>
+  <data key="d6">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</edge>
+<edge source="&quot;MARKETING&quot;" target="&quot;MELISSA LOPEZ&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Melissa Lopez is the Marketing Manager in the Marketing department."</data>
+  <data key="d5">"departmental affiliation, management"</data>
+  <data key="d6">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</edge>
+<edge source="&quot;MARKETING&quot;" target="&quot;ALICE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Alice is part of the Marketing department, working on Market Research."</data>
+  <data key="d5">"departmental association, task assignment"</data>
+  <data key="d6">chunk-b883069f8adcb9fcadd7de602924ff41</data>
+</edge>
+<edge source="&quot;MICHAEL JOHNSON&quot;" target="&quot;FINANCE&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Michael Johnson is a Financial Analyst in the Finance department."</data>
+  <data key="d5">"departmental affiliation, financial analysis"</data>
+  <data key="d6">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</edge>
+<edge source="&quot;JESSICA JOHNSON&quot;" target="&quot;UNKNOWN ORGANIZATION&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Jessica Johnson is associated with a transaction facilitated by the organization on 17/01/2024."\</data>
+  <data key="d5">"financial transaction, association"\</data>
+  <data key="d6">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</edge>
+<edge source="&quot;QUALITY ASSURANCE&quot;" target="&quot;JESSICA MARTINEZ&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Jessica Martinez is a QA Assistant in the Quality Assurance department."</data>
+  <data key="d5">"departmental affiliation, quality assurance"</data>
+  <data key="d6">chunk-209bb616b99a2ff528c88b8afd0e2ddf</data>
+</edge>
+<edge source="&quot;JOHN SMITH&quot;" target="&quot;ORDER NO. 1001&quot;">
+  <data key="d3">17.0</data>
+  <data key="d4">"John Smith is associated with Order No. 1001, indicating a customer-order relationship."&lt;SEP&gt;"Order No. 1001 is associated with John Smith, indicating a transaction-customer relationship."</data>
+  <data key="d5">"customer-order"&lt;SEP&gt;"transaction-customer"</data>
+  <data key="d6">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</edge>
+<edge source="&quot;DAVID BROWN&quot;" target="&quot;UNKNOWN ORGANIZATION&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"David Brown is associated with a transaction facilitated by the organization on 17/01/2024."\</data>
+  <data key="d5">"financial transaction, association"\</data>
+  <data key="d6">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</edge>
+<edge source="**INVENTORY UPDATES**" target="**WAREHOUSE/INVENTORY MANAGEMENT**">
+  <data key="d3">1.0</data>
+  <data key="d4">**Warehouse/Inventory Management is responsible for conducting regular Inventory Updates.**</data>
+  <data key="d5">**inventory management, data accuracy**</data>
+  <data key="d6">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</edge>
+<edge source="**PRODUCT DEVELOPMENT TEAM**" target="**PRODUCT MANAGEMENT TEAM/COMPANY**">
+  <data key="d3">1.0</data>
+  <data key="d4">**The Product Management Team oversees the work of the Product Development Team.**</data>
+  <data key="d5">**organizational hierarchy, product lifecycle**</data>
+  <data key="d6">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</edge>
+<edge source="**PRODUCT LAUNCHES**" target="**SALES DEPARTMENT**">
+  <data key="d3">1.0</data>
+  <data key="d4">**The Sales Department is involved in the strategy and execution of Product Launches.**</data>
+  <data key="d5">**sales strategy, marketing events**</data>
+  <data key="d6">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</edge>
+<edge source="**WAREHOUSE/INVENTORY MANAGEMENT**" target="**PURCHASING DEPARTMENT**">
+  <data key="d3">1.0</data>
+  <data key="d4">**The Purchasing Department works with Warehouse/Inventory Management to stock new products.**</data>
+  <data key="d5">**supply chain management, inventory control**</data>
+  <data key="d6">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</edge>
+<edge source="**PRODUCT MANAGEMENT TEAM/COMPANY**" target="**INVENTORY PRODUCTS (P101-P146)**">
+  <data key="d3">2.0</data>
+  <data key="d4">**The organization is responsible for managing the inventory of these products.**</data>
+  <data key="d5">**inventory management, product catalog**</data>
+  <data key="d6">chunk-a3eb8ad019d670872df0a3b9321b5b33</data>
+</edge>
+<edge source="&quot;TOM&quot;" target="&quot;SAM&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Sam (System Integration) and Tom (Prototype Testing) are involved in distinct projects within Engineering, suggesting a workflow progression from integration to testing."!</data>
+  <data key="d5">"workflow progression"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;TOM&quot;" target="&quot;PROTOTYPE TESTING&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Tom's project work falls under Prototype Testing, highlighting a direct departmental connection."!</data>
+  <data key="d5">"departmental assignment"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;TOM&quot;" target="&quot;RACHEL&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Rachel's work in Product Design and Tom's in Prototype Testing within the same organization might imply a sequence where design precedes testing."!</data>
+  <data key="d5">"design-testing sequence"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;TOM&quot;" target="&quot;ENGINEERING&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Tom's work in Prototype Testing falls under the umbrella of the Engineering organization, highlighting operational scope."!</data>
+  <data key="d5">"operational scope"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;QUENTIN'S PROJECT&quot;" target="&quot;ENGINEERING&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Quentin's unspecified project is presumed to be under the Engineering organization, given the context."!</data>
+  <data key="d5">"organizational affiliation"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;RACHEL&quot;" target="&quot;SAM&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"Both Rachel and Sam work on different projects (Product Design and System Integration, respectively) within the same Engineering organization, indicating a potential for interdepartmental collaboration."!</data>
+  <data key="d5">"interdepartmental connection"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;RACHEL&quot;" target="&quot;PRODUCT DESIGN&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Rachel works on a project within the Product Design department, indicating a direct association."!</data>
+  <data key="d5">"departmental assignment"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;RACHEL&quot;" target="&quot;ENGINEERING &quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Rachel works within the Engineering organization, specifically in Product Design, indicating a clear departmental affiliation."!</data>
+  <data key="d5">"departmental affiliation"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;PROTOTYPE TESTING PROJECT&quot;" target="&quot;ENGINEERING&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Prototype Testing project, led by Tom, falls under the Engineering organization's umbrella."!</data>
+  <data key="d5">"organizational scope"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;PRODUCT DESIGN PROJECT&quot;" target="&quot;ENGINEERING&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"This project, undertaken by Rachel in Product Design, contributes to the broader scope of Engineering."!</data>
+  <data key="d5">"organizational scope"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;SAM&quot;" target="&quot;SYSTEM INTEGRATION&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Sam is involved in a project within the System Integration department, showing a clear departmental affiliation."!</data>
+  <data key="d5">"departmental assignment"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;SAM&quot;" target="&quot;ENGINEERING&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Sam is involved in System Integration, a project under the Engineering organization, showing internal departmental structure."!</data>
+  <data key="d5">"project integration"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;SYSTEM INTEGRATION PROJECT&quot;" target="&quot;ENGINEERING&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Sam's project in System Integration is part of the Engineering organization's activities."!</data>
+  <data key="d5">"organizational scope"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;ENGINEERING&quot;" target="&quot;QUENTIN&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Quentin is likely associated with a project within the Engineering organization, though the specific department is not mentioned."!</data>
+  <data key="d5">"organizational affiliation"</data>
+  <data key="d6">chunk-1dbd153e3407d311a366ec8cc447b9a7</data>
+</edge>
+<edge source="&quot;ORDER NO. 1001&quot;" target="&quot;USD (UNITED STATES DOLLAR)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"USD is the currency used for Order No. 1001, indicating a currency-transaction relationship."</data>
+  <data key="d5">"currency-transaction"</data>
+  <data key="d6">chunk-c09bfe3857e687fbef8fba238d828967</data>
+</edge>
+<edge source="&quot;UNKNOWN ORGANIZATION&quot;\" target="&quot;[EACH PERSON'S NAME]&quot;\">
+  <data key="d3">8.0</data>
+  <data key="d4">"[Each Person's Name] is associated with a transaction facilitated by the organization on [Date]."\</data>
+  <data key="d5">"financial transaction, association"\</data>
+  <data key="d6">chunk-29ba694e6ae1f0c08048806e186d1bb1</data>
+</edge>
+<edge source="&quot;DRIVER&quot;" target="&quot;MOBILE APP&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Driver interacts with the Commsult system through a mobile app, updating order lists and confirming deliveries."</data>
+  <data key="d5">"interaction, mobile technology"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;DRIVER&quot;" target="&quot;COMMSULT API&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Driver interacts with the Commsult API through a mobile app, updating order lists and confirming deliveries, which triggers notifications and webhooks."</data>
+  <data key="d5">"interaction, notification"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;NOTIFICATIONS&quot;" target="&quot;USER&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Notifications are sent to Users in response to Driver interactions, keeping them updated on order changes."</data>
+  <data key="d5">"notification, system interaction"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;AUTHORIZATION TOKEN&quot;" target="&quot;COMMSULT API&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Commsult API requires a valid authorization token for access, ensuring secure interactions."</data>
+  <data key="d5">"security, authorization"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;ORDER LIST&quot;" target="&quot;REQUEST BODY&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The request body for order updates contains the order list data, essential for processing by the Commsult API."</data>
+  <data key="d5">"data exchange, API interaction"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;WEBHOOKS&quot;" target="&quot;WMS API&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Webhooks are sent from the Commsult API to the WMS API, facilitating integrated order management."</data>
+  <data key="d5">"integration, automated notification"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;COMMSULT API&quot;" target="&quot;USER&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The User receives notifications through the Commsult API system when the Driver updates order lists or confirms deliveries, provided they are logged in and have distributed orders."</data>
+  <data key="d5">"notification, system interaction"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;COMMSULT API&quot;" target="&quot;STATUS CODES&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Commsult API returns status codes indicating the outcome of requests, providing feedback on success or errors."</data>
+  <data key="d5">"system feedback, error handling"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;COMMSULT API&quot;" target="&quot;API ENDPOINTS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Commsult API manages specific endpoints for order updates and confirmations, each handling distinct requests."</data>
+  <data key="d5">"system architecture, API design"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;COMMSULT API&quot;" target="&quot;ORDER UPDATE&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Commsult API processes Order Updates, sending webhooks to WMS API and returning a 200 status code for valid requests, or 422 for incomplete requests."</data>
+  <data key="d5">"processing, validation"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;COMMSULT API&quot;" target="&quot;ORDER CONFIRMATION&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Commsult API processes Order Confirmations, sending webhooks to WMS API and returning a 200 status code for valid requests, or 422 for incomplete requests, and 401 for unauthorized access."</data>
+  <data key="d5">"processing, validation, authorization"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+<edge source="&quot;COMMSULT&quot;" target="&quot;WMS&quot;">
+  <data key="d3">18.0</data>
+  <data key="d4">"Commsult and WMS have an integrated API system, where Commsult sends webhooks to WMS API for order updates and confirmations."</data>
+  <data key="d5">"integration, notification"</data>
+  <data key="d6">chunk-10dc3e583eab53d1cf0bab61a150528c</data>
+</edge>
+</graph></graphml>

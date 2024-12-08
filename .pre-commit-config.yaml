@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 23.1.0  # Use the latest stable version of black
+    hooks:
+      - id: black
+        args: ["--check"]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0  # Use the latest stable version
+    hooks:
+      - id: check-ast  # Ensures Python files are valid
+      - id: detect-private-key
+        args: ["--pattern", "hf_.*|api_key|secret_key|access_token"]
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0  # Use the latest stable version of flake8
+    hooks:
+      - id: flake8
