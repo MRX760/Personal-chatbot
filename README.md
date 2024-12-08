@@ -40,23 +40,23 @@ Lora and SD checkpoint: [click here](https://drive.google.com/drive/folders/1_AO
 ## Document Analysis Example
 
 ### Finding Page
-![Finding page](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/2.png)
+![Finding page](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/2.png | width=600)
 <!-- *This screenshot shows the initial page finding process.* -->
 
 ### Analyzing CSV File
-![Analyzing csv file](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/3.png)
+![Analyzing csv file](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/3.png | width=600)
 > **Note:** Performance depends on the type of LLM. The cut-off part of the chat is influenced by the limitations of the LLM used in the screenshot.
 
 ### Analyzing PDF File
-![Analyzing pdf file](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/4.png)
+![Analyzing pdf file](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/4.png | width=600) 
 <!-- *This screenshot illustrates the process of analyzing a PDF file.* -->
 
 ## Image Generation Examples
 
 ### Mouse Image
-![Mouse](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/1.jpg)
+![Mouse](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/1.jpg | width=600)
 <!-- *Generated image of a mouse.* -->
 
 ### House Image
-![House](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/2.jpg)
+![House](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/2.jpg | width=600)
 <!-- *Generated image of a house.* -->
