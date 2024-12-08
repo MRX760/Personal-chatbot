@@ -41,7 +41,7 @@ Lora and SD checkpoint: [click here](https://drive.google.com/drive/folders/1_AO
 
 ### Finding Page
 ![Finding page](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/2.png)
-*This screenshot shows the initial page finding process.*
+<!-- *This screenshot shows the initial page finding process.* -->
 
 ### Analyzing CSV File
 ![Analyzing csv file](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/3.png)
@@ -49,14 +49,14 @@ Lora and SD checkpoint: [click here](https://drive.google.com/drive/folders/1_AO
 
 ### Analyzing PDF File
 ![Analyzing pdf file](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/4.png)
-*This screenshot illustrates the process of analyzing a PDF file.*
+<!-- *This screenshot illustrates the process of analyzing a PDF file.* -->
 
 ## Image Generation Examples
 
 ### Mouse Image
 ![Mouse](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/1.jpg)
-*Generated image of a mouse.*
+<!-- *Generated image of a mouse.* -->
 
 ### House Image
 ![House](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/2.jpg)
-*Generated image of a house.*
+<!-- *Generated image of a house.* -->
