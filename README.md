@@ -9,6 +9,7 @@ LightRAG documentation: [click here](https://github.com/HKUDS/LightRAG)
 
 Supported Nvidia Model: [click here](https://build.nvidia.com/nim)
 
+Lora and SD checkpoint: [click here](https://drive.google.com/drive/folders/1_AOVmKPLZCHogUpo9m6IPJMpWMvON7O0?usp=sharing)
 
 # limitations:
 - large file analysis would make the input token much larger and thus raising an error.
@@ -18,5 +19,6 @@ Supported Nvidia Model: [click here](https://build.nvidia.com/nim)
 
 # How to use the demo:
 - install dependencies (pip install -r requirements.txt)
+- Put [Lora and SD checkpoint](https://drive.google.com/drive/folders/1_AOVmKPLZCHogUpo9m6IPJMpWMvON7O0?usp=sharing) inside stable-diffusion/models corresponding folder. However, it's customizable on your needs but you'll have to modify the streamlit_app.py code.
 - modify the bot.set_api_key() to be your API key
 - streamlit run streamlit.py
