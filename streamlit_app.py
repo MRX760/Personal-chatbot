@@ -50,7 +50,7 @@ def initialization():
 
     return bot, bot_img, temp_file_dir, temp_log_dir, temp_log
 
-available_command = ['/save', '/download', '/rag', '/analyze', '/delete', '/relearn']
+available_command = ['/save', '/rag', '/analyze', '/relearn']
 db_changes = False
 bot, bot_img, temp_file_dir, temp_log_dir, temp_log = initialization()
 
