@@ -13,7 +13,7 @@ import shutil
 
 #functionality
 from chatbot import nvidia_llm_api, SD
-from utils import ask_img, create_session_dir, save_session_file, save_to_database, create_session_log, update_session_log
+from utils import ask_img, create_session_dir, save_session_file, save_to_database, create_session_log, update_session_log, base64_to_image
 import asyncio
 
 @st.cache_resource
@@ -27,11 +27,11 @@ def initialization():
     
     #nvidia
     bot = nvidia_llm_api()
-    bot.set_api_key("nvapi-xxxx")
+    bot.set_api_key("nvapi-xxx")
     # bot.connect(work_dir='./work_dir', model="meta/llama3-70b-instruct")
-    bot.connect(work_dir='./work_dir', model="nvidia/llama-3.1-nemotron-70b-instruct")
+    bot.connect(temp_dir = temp_file_dir.name, work_dir='./work_dir', model="nvidia/llama-3.1-nemotron-70b-instruct")
     bot.session_memory = temp_log
-    
+
     #hf
     # bot = huggingface_llm_api()
     # bot.set_api_key("hf_xxxx")
@@ -110,10 +110,16 @@ for msg in st.session_state.messages:
     # Check if the message includes an image
     if "image" in msg:
         with st.chat_message(msg["role"]):
-            st.image(msg["image"], caption="Generated Image")
-            img_buffer = io.BytesIO()
-            msg["image"].save(img_buffer, format="PNG")
-            img_buffer.seek(0)
+            try:
+                img = base64_to_image(msg["image"]["data"])
+                st.image(img, caption="Generated Image")
+                img_buffer = io.BytesIO()
+                img.save(img_buffer, format="PNG")
+            except:
+                st.image(msg["image"], caption="Generated Image")
+                img_buffer = io.BytesIO()
+                msg["image"].save(img_buffer, format="PNG")
+                img_buffer.seek(0)
 
 #sidebar
 with st.sidebar:
@@ -147,8 +153,6 @@ with st.sidebar:
         dtframe.data_editor(df)
 
 if prompt:= st.chat_input():
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    
     #write message to UI
     st.chat_message("user").write(prompt)
 
@@ -169,6 +173,7 @@ if prompt:= st.chat_input():
             with st.spinner('generating image'):
                 img = bot_img.generate_image(prompt=prompt, negative=negative_prompt)
 
+            st.session_state.messages.append({"role": "user", "content": prompt})
             st.session_state.messages.append({"role":"assistant", "content": "Generated Image as requested: ", "image":img })
             st.chat_message("assistant").write("Generated Image as requested: ")
 
@@ -186,6 +191,7 @@ if prompt:= st.chat_input():
             st.chat_message("assistant").write(message)
 
     elif any(item in available_command for item in prompt.split(" ")):
+        st.session_state.messages.append({"role": "user", "content": prompt})
         if sum(1 for item in available_command if item in prompt.split(" ")) > 1:
             st.chat_message("assistant").write("Generated Image as requested: ")
         else:
@@ -198,23 +204,29 @@ if prompt:= st.chat_input():
                 else:
                     db_changes = True
                     status = save_to_database(splitted_prompt[1], temp_file_dir.name)
-                    asyncio.run(bot.re_learn())
+                    # asyncio.run(bot.re_learn())
+                    bot.re_learn()
                     st.chat_message("assistant").write(status)
                     st.session_state.messages.append({"role": "assistant", "content": status})
             
             elif splitted_prompt[0] == '/relearn':
                 st.session_state.messages.append({"role": "assistant", "content": "Please wait during learning process.."})
                 st.chat_message("assistant").write("Please wait during learning process..")
-                asyncio.run(bot.re_learn())
+                # asyncio.run(bot.re_learn())
+                bot.re_learn()
                 st.session_state.messages.append({"role": "assistant", "content": "Learning completed.. You may continue our conversation"})
                 st.chat_message("assistant").write("Learning completed.. You may continue our conversation")
-                print(bot.knowledge_log)
+                
 
             elif splitted_prompt[0] == '/rag':
                 # content = asyncio.run(bot.search(prompt.split(" ",1)[-1]))
-                content = bot.search(prompt.split(" ",1)[-1])
-                st.session_state.messages.append({"role": "assistant", "content": content})
-                st.chat_message("assistant").write(content)
+                if prompt.split(" ",1)[-1] in ['/rag']:
+                    st.chat_message("assistant").write(f"The syntax is: /rag < what to do>")
+                    st.session_state.messages.append({"role": "assistant", "content": f"The syntax is: /rag < what to do>"})
+                else:
+                    content = bot.search(prompt.split(" ",1)[-1])
+                    st.session_state.messages.append({"role": "assistant", "content": content})
+                    st.chat_message("assistant").write(content)
             
             elif splitted_prompt[0] == '/analyze':
                 filename, prompt = prompt.split(" ", 2)[1], prompt.split(" ", 2)[-1]
@@ -225,18 +237,15 @@ if prompt:= st.chat_input():
                 st.session_state.messages.append({"role": "assistant", "content": response})
                 st.chat_message("assistant").write(response)
 
-
-
-
-                  
-
     #normal chat
     else:
+        st.session_state.messages.append({"role": "user", "content": prompt})
         respond = bot.send_chat_request(prompt=prompt)
         st.session_state.messages.append({"role": "assistant", "content": respond})
         st.chat_message("assistant").write(respond)
     
     if '/' in prompt.split(" ")[0] and not any(item in available_command for item in prompt.split(" ")):
+                st.session_state.messages.append({"role": "user", "content": prompt})
                 st.chat_message("assistant").write(f"If you're trying to use command, here's available command list: {available_command}")
                 st.session_state.messages.append({"role": "assistant", "content": f"If you're trying to use command, here's available command list: {available_command}"})
 

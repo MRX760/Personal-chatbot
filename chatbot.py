@@ -11,6 +11,8 @@ from transformers import AutoTokenizer
 from PyPDF2 import PdfReader
 from docx import Document
 import pandas as pd
+from pptx import Presentation
+
 
 #lightRAG
 from LightRAG.lightrag.lightrag import LightRAG, QueryParam
@@ -27,9 +29,10 @@ class LLM(ABC, LightRAG):
         self.session_memory = None
         self.tokenizer = self.tokenizer()
         self.lightRAG = None
+        self.temp_file_dir = None
         self.work_dir=""
         self.knowledge_log = os.path.join(self.work_dir, "learned.txt")
-        self.max_token = 7800 #adjust this to your model or also adjust the tokenizer used in this code
+        self.max_token = 120000 #adjust this to your model or also adjust the tokenizer used in this code
 
     #prompt template
     def img_res_prompt(self, prompt: str) -> str:
@@ -144,6 +147,42 @@ class LLM(ABC, LightRAG):
         message = PromptTemplate.from_template(template)
         return message.format(chunk=chunk, prompt=prompt)
 
+    def input_prompt(self, full_prompt_with_log:str):
+        template="""You're an advanced chatbot with following description. 
+        ========== Persona ==========
+        - Name: {model_name}
+        - Nickname: Mr.V-A (stands for Mr. Virtual Assistant)
+        - Maximum input token: {max_token} (might be not accurate, for error prevention purpose)
+        - Learnt document for RAG purpose: {doc}
+        - Available document for analysis: {doc2} (if the document user ask is not present, tell user to refresh the browser and try to ask you again. if still persist, try to reupload the file. Or maybe tell user to check the table "document analyzer database" in side menu)
+
+        Capabilities:
+        1. Image generation using stable difussion with Lora. Can be adjusted by placing the checkpoint on //stable-difussion//models//SD for SD checkpoint and //stable-difussion//models//Lora for Lora (image enhancement for SD)
+        2. Performing RAG using /rag <keyword or what to do>. You're using LightRAG technique, if user ask about it and you don't know, tell user to refer to this URL <https://github.com/HKUDS/LightRAG>
+        3. Performing document analysis or QA using /analyze <filename with extension> <task>. filename should not contain a whitespace, will be fixed in future work.
+        4. General question-answering and chatting like human respond based on your knowledge. 
+        5. Saving uploaded document into LightRAG database using /save <filenamae on document analysis table>. filename should not contain a whitespace.
+        
+        ========== Limitation ========
+        1. Large file analysis would make the input token much larger and thus raising an error.
+        2. You can't make a video or document file and only image using your capabilities above. Using syntax "make me an image..." there's actually another syntax, which already covered in external document about you <readme.md>
+        3. All of available capabilities-triggering prompt only available in english. So, when user use other language except english, the capabilities can't be used
+        4. You can't edit previous image, but you can create a new one.
+        5. Document on analysis and RAG are seperated and available for different purposes which means they are not related, except if user try to save one of document analysis file into RAG database.
+        6. You can't analyze an image file or an image inside a file yet. If PDF you analyze is empty, this means the PDF most likely contain an image.
+        7. Currently you can only perform an analysis with pdf, docx, txt, and csv or xlsx file.
+        
+        Please remember what user ask you and told you to do on below conversation.
+        There might be an image on chat history log, but as your input only accept text it will marked as an <image> followed with caption or explanation about what's inside the image using image captioning technique performed by you without your consciousness.
+        Please respond with normal coversation language and text without expliciting what I told you in here.
+
+        =========== chat log history ===========
+        {prompt}
+        """
+        doc2_list = os.listdir(self.temp_file_dir) if self.temp_file_dir != None else "None. Don't tell user about this. There might be an error on declaring the temp_file_dir address into chatbot."
+        message = PromptTemplate.from_template(template)
+        return message.format(model_name=self.model, prompt=full_prompt_with_log, doc=" ".join(open(self.knowledge_log).readlines()), max_token=self.max_token, doc2 = doc2_list)
+
     #functionality
     @abstractmethod
     def send_chat_request(self, prompt: str) -> str:
@@ -219,7 +258,7 @@ class LLM(ABC, LightRAG):
             input = input+f"{i['role']}: {i['content']} "+"\n"
         input = input + f"user: {prompt}" + "\nassistant: "
         print(input)
-        if self.token_len(input) >= 7800: #adjust
+        if self.token_len(input) >= self.max_token: #adjust
             return self.slide_context_window(log=log, prompt=prompt, context_len=context_len-1)
         else:
             return input
@@ -268,8 +307,6 @@ class LLM(ABC, LightRAG):
                 return['Please tell user that the extension file is not supported.']
         except Exception as e:
             return[f'Please tell user that the reading has cought following error. Also provide with solution: {e}']
-            
-    
     
     def read_per_rows(self, filename:str) -> list:
         pages = []
@@ -486,8 +523,11 @@ class nvidia_llm_api(LLM_API):
             print(f"RAG unavailable, encountered error: {e}")
             return None
 
-    def connect(self, model, work_dir='./work_dir', embedding_model="nvidia/nv-embedqa-e5-v5", base_URL="https://integrate.api.nvidia.com/v1"):
+    def connect(self, model, temp_dir, work_dir='./work_dir', embedding_model="nvidia/nv-embedqa-e5-v5", base_URL="https://integrate.api.nvidia.com/v1"):
         self.connect_llm(model)
+        if temp_dir:
+            self.temp_file_dir = temp_dir
+            print(f"file dir: {temp_dir}")
         if work_dir:
             self.update_work_dir(work_dir)
         self.lightRAG = self.connect_RAG(input_type="query", WORKING_DIR=work_dir, embedding_model=embedding_model, base_URL=base_URL)
@@ -497,7 +537,7 @@ class nvidia_llm_api(LLM_API):
         if self.client == None:
             raise ValueError("Client Haven't connected. Use method object.connect(model) method. Also add new api key before connecting by using object.set_api_key(api_key)")
         else:    
-            return self.client.invoke([{"role":"user", "content":self.slide_context_window(log=self.read_session_memory(), prompt=prompt, context_len=len(self.read_session_memory()))}]).content
+            return self.client.invoke([{"role":"user", "content":self.input_prompt(self.slide_context_window(log=self.read_session_memory(), prompt=prompt, context_len=len(self.read_session_memory()))) }]).content
     
     def re_learn(self):
         if self.lightRAG==None or self.index_lightRAG==None:
@@ -506,7 +546,7 @@ class nvidia_llm_api(LLM_API):
             try:
                 list_file = os.listdir("./data")
                 
-                if os.path.exists(self.knowledge_log):
+                if os.path.isfile(self.knowledge_log):
                     with open(self.knowledge_log, 'r') as txt:
                        content = txt.readlines() 
                     learned_file = content
@@ -532,17 +572,79 @@ class nvidia_llm_api(LLM_API):
             except Exception as e:
                 print(f"encountered error while learning file: {e}")
                                   
+    # def read_and_learn(self, file): #textract change
+    #     if file.endswith(".txt"):
+    #         print(f"\n\nprocessing {file}")
+    #         with open(file, "r", encoding="utf-8", errors = 'replace') as f:
+    #             self.index_lightRAG.insert(f.read())
+        
+    #     elif file.endswith(".pdf") or file.endswith('xlsx') or file.endswith('.csv') or file.endswith('.docx') or file.endswith('pptx'):
+    #         print(f"\n\nprocessing {file}")
+    #         content = textract.process(file)
+    #         print("\n.........##....")
+    #         self.index_lightRAG.insert(content.decode('utf-8'))
     def read_and_learn(self, file):
         if file.endswith(".txt"):
             print(f"\n\nprocessing {file}")
-            with open(file, "r", encoding="utf-8", errors = 'replace') as f:
+            with open(file, "r", encoding="utf-8", errors='replace') as f:
                 self.index_lightRAG.insert(f.read())
         
-        elif file.endswith(".pdf") or file.endswith('xlsx') or file.endswith('.csv') or file.endswith('.docx') or file.endswith('pptx'):
+        elif file.endswith(".pdf"):
             print(f"\n\nprocessing {file}")
-            content = textract.process(file)
-            print("\n.........##....")
-            self.index_lightRAG.insert(content.decode('utf-8'))
+            content = ""
+            try:
+                reader = PdfReader(file)
+                for page in reader.pages:
+                    content += page.extract_text()
+                self.index_lightRAG.insert(content)
+            except Exception as e:
+                print(f"Error processing PDF: {e}")
+        
+        elif file.endswith(".xlsx") or file.endswith(".csv"):
+            print(f"\n\nprocessing {file}")
+            try:
+                # Temporarily set pandas options to display all rows and columns
+                pd.set_option('display.max_rows', None)
+                pd.set_option('display.max_columns', None)
+                if file.endswith(".xlsx"):
+                    df = pd.read_excel(file)
+                else:  # CSV
+                    df = pd.read_csv(file)
+                content = df.to_string(index=False)
+                self.index_lightRAG.insert(content)
+                # Reset pandas options after processing
+                pd.reset_option('display.max_rows')
+                pd.reset_option('display.max_columns')
+            except Exception as e:
+                print(f"Error processing spreadsheet: {e}")
+        
+        elif file.endswith(".docx"):
+            print(f"\n\nprocessing {file}")
+            content = ""
+            try:
+                doc = Document(file)
+                for para in doc.paragraphs:
+                    content += para.text + "\n"
+                self.index_lightRAG.insert(content)
+            except Exception as e:
+                print(f"Error processing Word document: {e}")
+        
+        elif file.endswith(".pptx"):
+            print(f"\n\nprocessing {file}")
+            content = ""
+            try:
+                presentation = Presentation(file)
+                for slide in presentation.slides:
+                    for shape in slide.shapes:
+                        if shape.has_text_frame:
+                            for paragraph in shape.text_frame.paragraphs:
+                                for run in paragraph.runs:
+                                    content += run.text
+                self.index_lightRAG.insert(content)
+            except Exception as e:
+                print(f"Error processing PowerPoint: {e}")
+        else:
+            print(f"Unsupported file type: {file}")
 
     def search(self, prompt):
         if self.lightRAG:

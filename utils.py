@@ -16,6 +16,21 @@ from io import StringIO
 import PyPDF2
 from docx import Document
 import shutil
+import base64
+import io
+
+def image_to_base64(img):
+    buffered = io.BytesIO()
+    img.save(buffered, format="PNG")  # Adjust format as needed
+    return base64.b64encode(buffered.getvalue()).decode("utf-8")
+
+def base64_to_image(base64_str):
+    img_data = base64.b64decode(base64_str)
+    return Image.open(io.BytesIO(img_data))
+
+def serialize_data(obj):
+    if isinstance(obj, Image.Image):  # Check if obj is a PIL Image
+        return {"data": image_to_base64(obj)}
 
 def save_log(messages, filename='log_dump.txt'):
     with open(filename, 'w') as txt:
@@ -25,6 +40,14 @@ def read_log(filename='log_dump.txt'):
     with open(filename, 'r') as log:
         messages = json.load(log)
     return messages
+
+def update_session_log(session_log: dict, log_path: str):
+    with open(log_path, 'w') as log:
+        json.dump(session_log, log, default=serialize_data)  # Use custom serialization
+
+# def update_session_log(session_log: dict, log_path: str):
+#     with open(log_path, 'w') as log:
+#         log.write(json.dumps(session_log))
 
 def send_img_request(prompt, negative_prompt,
                      model_path='..\stable-diffusion-webui\models\Stable-diffusion', 
@@ -101,10 +124,6 @@ def create_session_log(dir: str):
     with open(log, 'w') as file:
         file.write(json.dumps({})) #dictionary
     return log
-
-def update_session_log(session_log: dict, log_path: str):
-    with open(log_path, 'w') as log:
-        log.write(json.dumps(session_log))
 
 
 def save_session_file(file, name: str, dir_name: str):
