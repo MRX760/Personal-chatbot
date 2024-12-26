@@ -11,6 +11,11 @@ Supported Nvidia Model: [click here](https://build.nvidia.com/nim)
 
 Lora and SD checkpoint: [click here](https://drive.google.com/drive/folders/1_AOVmKPLZCHogUpo9m6IPJMpWMvON7O0?usp=sharing)
 
+### Streamlit app code flow
+![Analyzing pdf file](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/code-flow.png)
+<!-- *This screenshot illustrates streamlit app code flow.* -->
+> **Note:** Future work: Update on huggingface API for LightRAG implementation example.
+
 # Limitations:
 - Large file analysis would make the input token much larger and thus raising an error.
 - Long chat history also makes input token much larger
@@ -43,9 +48,9 @@ Lora and SD checkpoint: [click here](https://drive.google.com/drive/folders/1_AO
 ![Finding page](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/2.png)
 <!-- *This screenshot shows the initial page finding process.* -->
 
-### Analyzing CSV File
-![Analyzing csv file](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/3.png)
-> **Note:** Performance depends on the type of LLM. The cut-off part of the chat is influenced by the limitations of the LLM used in the screenshot.
+### LightRAG on csv file
+![LightRAG on csv file reference](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/6.png)
+> **Note:** LightRAG erformance depends on the type of LLM.
 
 ### Analyzing PDF File
 ![Analyzing pdf file](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/4.png)
@@ -60,3 +65,7 @@ Lora and SD checkpoint: [click here](https://drive.google.com/drive/folders/1_AO
 ### House Image
 ![House](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/2.jpg)
 <!-- *Generated image of a house.* -->
+
+### Swamp Image
+![House](https://github.com/MRX760/Personal-chatbot/blob/main/documentation/5.png)
+<!-- *Generated image of a swamp.* -->
