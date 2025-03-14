@@ -15,9 +15,11 @@ from pptx import Presentation
 
 
 #lightRAG
-from LightRAG.lightrag.lightrag import LightRAG, QueryParam
-from LightRAG.lightrag.llm import openai_complete_if_cache, nvidia_openai_embedding
-from LightRAG.lightrag.utils import EmbeddingFunc, locate_json_string_body_from_string
+from lightrag.lightrag import LightRAG, QueryParam
+# from LightRAG.lightrag.llm import openai_complete_if_cache, nvidia_openai_embedding
+from lightrag.llm.nvidia_openai import nvidia_openai_embed as nvidia_openai_embedding
+from lightrag.llm.openai import openai_complete_if_cache
+from lightrag.utils import EmbeddingFunc, locate_json_string_body_from_string
 import asyncio
 import numpy as np
 import textract
