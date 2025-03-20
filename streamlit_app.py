@@ -31,7 +31,7 @@ def initialization():
     
     #nvidia
     bot = nvidia_llm_api()
-    bot.set_api_key("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")
+    bot.set_api_key("nvapi-xxx")
     # bot.connect(work_dir='./work_dir', model="meta/llama3-70b-instruct")
     bot.connect(temp_dir = temp_file_dir.name, work_dir='./work_dir', model="nvidia/llama-3.1-nemotron-70b-instruct")
     bot.session_memory = temp_log
