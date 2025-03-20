@@ -329,6 +329,24 @@
       "embedding_min": null,
       "embedding_max": null,
       "original_prompt": "is jacqueline? "
+    },
+    "ca3808160f3a990f374b6106c4f20785": {
+      "return": "{\"high_level_keywords\": [\"Individual Inquiry\", \"Personal Identification\"], \"low_level_keywords\": [\"Jacqueline\"]}",
+      "cache_type": "keywords",
+      "embedding": null,
+      "embedding_shape": null,
+      "embedding_min": null,
+      "embedding_max": null,
+      "original_prompt": "jacqueline"
+    },
+    "5a7ebe0053fe60daa3fe0eae069bf14f": {
+      "return": "**Jacqueline Thompson: Professional Overview**\n=============================================\n\n### **Summary**\n\nJacqueline Thompson is a results-oriented Engineering Executive with a proven track record of optimizing project outcomes. She is skilled in strategic project management and team leadership, seeking a challenging executive role to leverage her technical expertise and drive engineering excellence.\n\n### **Work Experience**\n\n* **Engineering Executive, Borcelle Technologies (Jan 2023 - Present)**\n\t+ Implemented cost-effective solutions, resulting in a 20% reduction in project expenses.\n\t+ Streamlined project workflows, enhancing overall efficiency by 25%.\n\t+ Successfully led a team in delivering a complex engineering project on time and within budget.\n* **Project Engineer, Salford & Co (Mar 2021 - Dec 2022)**\n\t+ Managed project timelines, reducing delivery times by 30%.\n\t+ Spearheaded the adoption of cutting-edge engineering software, improving project accuracy by 15%.\n\t+ Collaborated with cross-functional teams, enhancing project success rates by 10%.\n* **Graduate Engineer, Arowwai Industries (Feb 2020 - Jan 2021)**\n\t+ Coordinated project tasks, ensuring adherence to engineering standards and regulations.\n\t+ Conducted comprehensive project analyses, identifying and rectifying discrepancies in engineering designs.\n\n### **Education**\n\n* **Master of Science in Mechanical Engineering, University of Engineering and Technology (Sep 2019 - Oct 2020)**\n\t+ Specialization in Advanced Manufacturing.\n\t+ Thesis on \"Innovations in Sustainable Engineering Practices\".\n* **Bachelor of Science in Civil Engineering, City College of Engineering (Aug 2015 - Aug 2019)**\n\t+ Relevant coursework in Structural Design and Project Management.\n\n### **Additional Information**\n\n* **Technical Skills:**\n\t+ Project Management\n\t+ Structural Analysis\n\t+ Robotics and Automation\n\t+ CAD\n* **Languages:**\n\t+ English\n\t+ Malay\n\t+ German\n* **Certifications:**\n\t+ Professional Engineer (PE) License\n\t+ Project Management Professional (PMP)\n* **Awards/Activities:**\n\t+ Received the \"Engineering Excellence\" Award for outstanding contributions to project innovation at Borcelle Technologies.",
+      "cache_type": "query",
+      "embedding": null,
+      "embedding_shape": null,
+      "embedding_min": null,
+      "embedding_max": null,
+      "original_prompt": "jacqueline"
     }
   }
 }

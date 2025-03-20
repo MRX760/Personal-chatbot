@@ -24,8 +24,9 @@ Lora and SD checkpoint: [click here](https://drive.google.com/drive/folders/1_AO
 - RAG method are using [LightRAG](https://github.com/HKUDS/LightRAG)
 
 # How to use the demo:
+<!-- - Install LightRAG `pip install lightrag-hku` -->
 - Install dependencies `pip install -r requirements.txt`
-- Make sure you've cloned the latest [LightRAG](https://github.com/HKUDS/LightRAG) sub-module used in this repo. Using command `git clone https://github.com/HKUDS/LightRAG.git`
+<!-- - Make sure you've cloned the latest [LightRAG](https://github.com/HKUDS/LightRAG) sub-module used in this repo. Using command `git clone https://github.com/HKUDS/LightRAG.git` -->
 - Put [Lora and SD checkpoint](https://drive.google.com/drive/folders/1_AOVmKPLZCHogUpo9m6IPJMpWMvON7O0?usp=sharing) inside stable-diffusion/models corresponding folder. However, it's customizable on your needs but you'll have to modify the streamlit_app.py code.
 - Insert your API key inside the `bot.set_api_key("nvapi-xxxx")` to use nvidia NIM or `bot.set_api_key("hf_xxxx")` to use hf model.
 - To run streamlit GUI, run this on your environment command line or prompt: `streamlit run streamlit_app.py`

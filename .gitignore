@@ -3,9 +3,10 @@
 __pycache__/
 *.pyc
 
-.env
+chatbot_env/
 
 config.json
 
 stable-diffusion/
 
+.venv/

@@ -15,9 +15,13 @@ import shutil
 from chatbot import nvidia_llm_api, SD
 from utils import ask_img, create_session_dir, save_session_file, save_to_database, create_session_log, update_session_log, base64_to_image
 import asyncio
+import torch
+import nest_asyncio
 
 @st.cache_resource
 def initialization():
+    # torch.classes.__path__ = [os.path.join(torch.__path__[0], torch.classes.__file__)] 
+    nest_asyncio.apply()
     #session directory
     temp_file_dir = create_session_dir()
     temp_log_dir = create_session_dir()
@@ -38,15 +42,16 @@ def initialization():
     # bot.connect()
 
     #SD model declaration
-    bot_img = SD()
-    # bot_img.load_model(os.path.join("..\stable-diffusion-webui\models\Stable-diffusion", "realisticVisionV60B1_v51HyperVAE.safetensors"))
-    # bot_img.load_lora("..\stable-diffusion-webui\models\Lora", ['add_detail.safetensors', 'neon_palette_offset.safetensors', 'more_details.safetensors'], 
+    bot_img = None
+    # bot_img = SD()
+    # # bot_img.load_model(os.path.join("..\stable-diffusion-webui\models\Stable-diffusion", "realisticVisionV60B1_v51HyperVAE.safetensors"))
+    # # bot_img.load_lora("..\stable-diffusion-webui\models\Lora", ['add_detail.safetensors', 'neon_palette_offset.safetensors', 'more_details.safetensors'], 
+    # #                 [1.0, 1.0, 0.5])
+    # # bot_img.activate_lora(["add_detail", "neon_palette_offset", "more_details"])
+    # bot_img.load_model(os.path.join(".\stable-diffusion\models\SD", "realisticVisionV60B1_v51HyperVAE.safetensors"))
+    # bot_img.load_lora(".\stable-diffusion\models\Lora", ['add_detail.safetensors', 'neon_palette_offset.safetensors', 'more_details.safetensors'], 
     #                 [1.0, 1.0, 0.5])
     # bot_img.activate_lora(["add_detail", "neon_palette_offset", "more_details"])
-    bot_img.load_model(os.path.join(".\stable-diffusion\models\SD", "realisticVisionV60B1_v51HyperVAE.safetensors"))
-    bot_img.load_lora(".\stable-diffusion\models\Lora", ['add_detail.safetensors', 'neon_palette_offset.safetensors', 'more_details.safetensors'], 
-                    [1.0, 1.0, 0.5])
-    bot_img.activate_lora(["add_detail", "neon_palette_offset", "more_details"])
 
     return bot, bot_img, temp_file_dir, temp_log_dir, temp_log
 
@@ -225,6 +230,9 @@ if prompt:= st.chat_input():
                     st.session_state.messages.append({"role": "assistant", "content": f"The syntax is: /rag < what to do>"})
                 else:
                     content = bot.search(prompt.split(" ",1)[-1])
+                    if isinstance(content, asyncio.Future):
+                        content = asyncio.run(content)  # Ensure future is resolved
+
                     st.session_state.messages.append({"role": "assistant", "content": content})
                     st.chat_message("assistant").write(content)
             

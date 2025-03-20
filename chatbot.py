@@ -16,13 +16,14 @@ from pptx import Presentation
 
 #lightRAG
 from lightrag.lightrag import LightRAG, QueryParam
+from lightrag.kg.shared_storage import initialize_pipeline_status
 # from LightRAG.lightrag.llm import openai_complete_if_cache, nvidia_openai_embedding
 from lightrag.llm.nvidia_openai import nvidia_openai_embed as nvidia_openai_embedding
 from lightrag.llm.openai import openai_complete_if_cache
 from lightrag.utils import EmbeddingFunc, locate_json_string_body_from_string
 import asyncio
 import numpy as np
-import textract
+# import textract
 
 #Base class of all LLM
 class LLM(ABC, LightRAG):
@@ -518,9 +519,13 @@ class nvidia_llm_api(LLM_API):
                         func=embedding_func,
                     ),
                 )
+                await rag.initialize_storages()
+                await initialize_pipeline_status()
                 return rag
             
-            return asyncio.run(try_to_connect())
+            rag = asyncio.run(try_to_connect())
+            return rag
+            # return await try_to_connect()
         except Exception as e:
             print(f"RAG unavailable, encountered error: {e}")
             return None
@@ -532,8 +537,10 @@ class nvidia_llm_api(LLM_API):
             print(f"file dir: {temp_dir}")
         if work_dir:
             self.update_work_dir(work_dir)
+        
         self.lightRAG = self.connect_RAG(input_type="query", WORKING_DIR=work_dir, embedding_model=embedding_model, base_URL=base_URL)
         self.index_lightRAG = self.connect_RAG(input_type="passage", WORKING_DIR=work_dir, embedding_model=embedding_model, base_URL=base_URL)
+        print(f'\n\nHere is = {self.lightRAG==None} ||| {self.index_lightRAG==None} ####')
 
     def send_chat_request(self, prompt: str):
         if self.client == None:
@@ -651,9 +658,20 @@ class nvidia_llm_api(LLM_API):
     def search(self, prompt):
         if self.lightRAG:
             response = self.lightRAG.query(prompt.split(" ", 1)[-1], param=QueryParam(mode="hybrid"))
+            # response = asyncio.run(self.lightRAG.query(prompt.split(" ", 1)[-1], param=QueryParam(mode="hybrid")))
             return response
         return "RAG unavailable. Encountered error when trying to create lightRAG object."
     
+    # def search(self, prompt):
+    #     if self.lightRAG:
+    #         loop = asyncio.get_event_loop()
+    #         if loop.is_running():  
+    #             future = asyncio.ensure_future(self.lightRAG.query(prompt.split(" ", 1)[-1], param=QueryParam(mode="hybrid")))
+    #             return future
+    #         else:
+    #             return asyncio.run(self.lightRAG.query(prompt.split(" ", 1)[-1], param=QueryParam(mode="hybrid")))
+    #     return "RAG unavailable. Encountered error when trying to create lightRAG object."
+
 
 
 class huggingface_llm_api(LLM_API):
