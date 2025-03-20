@@ -1,7 +1,0 @@
-Call-Center-Sentiment-Sample-Data.csv
-Employee-Management-Sample-Data.csv
-Inventory-Records-Sample-Data.csv
-jacqueline_cv.txt
-Project-Management-Sample-Data.csv
-Supermarket-Sales-Sample-Data.csv
-Test_Plan_Template.docx
