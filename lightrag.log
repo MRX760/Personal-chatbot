@@ -319,3 +319,57 @@
 2024-12-22 12:50:01,301 - lightrag - INFO - kw_prompt result:
 2024-12-22 12:50:02,984 - lightrag - INFO - Local query uses 2 entites, 0 relations, 3 text units
 2024-12-22 12:50:04,053 - lightrag - INFO - Global query uses 49 entites, 38 relations, 4 text units
+2025-03-13 13:31:51,807 - lightrag - INFO - Loaded document status storage with 0 records
+2025-03-13 13:31:51,814 - lightrag - INFO - Storage Initialization completed!
+2025-03-13 13:31:53,313 - lightrag - INFO - Logger initialized for working directory: ./work_dir
+2025-03-13 13:31:53,315 - lightrag - INFO - Load KV llm_response_cache with 58 data
+2025-03-13 13:31:53,323 - lightrag - INFO - Load KV full_docs with 14 data
+2025-03-13 13:31:53,323 - lightrag - INFO - Load KV text_chunks with 30 data
+2025-03-13 13:31:53,355 - lightrag - INFO - Loaded graph from ./work_dir\graph_chunk_entity_relation.graphml with 553 nodes, 177 edges
+2025-03-13 13:31:53,418 - lightrag - INFO - Loaded document status storage with 0 records
+2025-03-13 13:31:53,418 - lightrag - INFO - Storage Initialization completed!
+2025-03-13 13:38:39,442 - lightrag - INFO - Creating a new event loop in main thread.
+2025-03-13 13:38:39,453 - lightrag - INFO - Non-embedding cached missed(mode:hybrid type:query)
+2025-03-13 13:38:39,454 - lightrag - INFO - Non-embedding cached missed(mode:hybrid type:keywords)
+2025-03-13 13:38:51,980 - lightrag - INFO - Inserting 1 to llm_response_cache
+2025-03-13 13:38:51,980 - lightrag - INFO - Query nodes: Test Cases, Test Scenarios, Test Environment Setup, Test Data Management, Test Schedule, top_k: 60, cosine: 0.2
+2025-03-13 13:38:52,522 - lightrag - INFO - Query edges: Test Planning, Software Testing, Quality Assurance, top_k: 60, cosine: 0.2
+2025-03-13 13:38:53,870 - lightrag - INFO - Global query uses 80 entites, 60 relations, 6 chunks
+2025-03-13 13:38:54,014 - lightrag - INFO - Local query uses 60 entites, 64 relations, 7 chunks
+2025-03-13 13:39:18,092 - lightrag - INFO - Inserting 1 to llm_response_cache
+2025-03-13 14:41:34,844 - lightrag - INFO - Creating a new event loop in main thread.
+2025-03-13 14:41:34,866 - lightrag - INFO - Non-embedding cached missed(mode:hybrid type:query)
+2025-03-13 14:41:34,868 - lightrag - INFO - Non-embedding cached missed(mode:hybrid type:keywords)
+2025-03-13 14:41:40,017 - lightrag - INFO - Inserting 1 to llm_response_cache
+2025-03-13 14:41:40,019 - lightrag - INFO - Query nodes: Employee Database, Spreadsheet Rows, CSV File, Data Retrieval, Top 10 Entries, top_k: 60, cosine: 0.2
+2025-03-13 14:41:40,602 - lightrag - INFO - Query edges: Employee Management, Data Extraction, CSV Format, top_k: 60, cosine: 0.2
+2025-03-13 14:41:42,147 - lightrag - INFO - Global query uses 56 entites, 60 relations, 5 chunks
+2025-03-13 14:41:42,154 - lightrag - INFO - Local query uses 30 entites, 29 relations, 3 chunks
+2025-03-13 14:42:01,335 - lightrag - INFO - Inserting 1 to llm_response_cache
+2025-03-14 09:38:26,388 - lightrag - INFO - Loaded document status storage with 0 records
+2025-03-14 09:38:26,388 - lightrag - INFO - Storage Initialization completed!
+2025-03-14 09:38:27,653 - lightrag - INFO - Logger initialized for working directory: ./work_dir
+2025-03-14 09:38:27,660 - lightrag - INFO - Load KV llm_response_cache with 58 data
+2025-03-14 09:38:27,666 - lightrag - INFO - Load KV full_docs with 14 data
+2025-03-14 09:38:27,667 - lightrag - INFO - Load KV text_chunks with 30 data
+2025-03-14 09:38:27,696 - lightrag - INFO - Loaded graph from ./work_dir\graph_chunk_entity_relation.graphml with 553 nodes, 177 edges
+2025-03-14 09:38:27,736 - lightrag - INFO - Loaded document status storage with 0 records
+2025-03-14 09:38:27,736 - lightrag - INFO - Storage Initialization completed!
+2025-03-20 09:55:04,188 - lightrag - INFO - Loaded document status storage with 0 records
+2025-03-20 09:55:04,188 - lightrag - INFO - Storage Initialization completed!
+2025-03-20 09:55:05,815 - lightrag - INFO - Logger initialized for working directory: ./work_dir
+2025-03-20 09:55:05,820 - lightrag - INFO - Load KV llm_response_cache with 58 data
+2025-03-20 09:55:05,820 - lightrag - INFO - Load KV full_docs with 14 data
+2025-03-20 09:55:05,820 - lightrag - INFO - Load KV text_chunks with 30 data
+2025-03-20 09:55:05,846 - lightrag - INFO - Loaded graph from ./work_dir\graph_chunk_entity_relation.graphml with 553 nodes, 177 edges
+2025-03-20 09:55:05,898 - lightrag - INFO - Loaded document status storage with 0 records
+2025-03-20 09:55:05,900 - lightrag - INFO - Storage Initialization completed!
+2025-03-20 09:56:56,774 - lightrag - INFO - Creating a new event loop in main thread.
+2025-03-20 09:56:56,778 - lightrag - INFO - Non-embedding cached missed(mode:hybrid type:query)
+2025-03-20 09:56:56,780 - lightrag - INFO - Non-embedding cached missed(mode:hybrid type:keywords)
+2025-03-20 09:57:03,893 - lightrag - INFO - Inserting 1 to llm_response_cache
+2025-03-20 09:57:03,895 - lightrag - INFO - Query nodes: Name Mention (Jacqueline), Unknown Context, Ambiguous Query, top_k: 60, cosine: 0.2
+2025-03-20 09:57:04,397 - lightrag - INFO - Query edges: Identification, Query Clarification, top_k: 60, cosine: 0.2
+2025-03-20 09:57:05,682 - lightrag - INFO - Local query uses 37 entites, 27 relations, 3 chunks
+2025-03-20 09:57:06,074 - lightrag - INFO - Global query uses 68 entites, 60 relations, 5 chunks
+2025-03-20 09:57:30,337 - lightrag - INFO - Inserting 1 to llm_response_cache

@@ -1,0 +1,11 @@
+*.log
+
+__pycache__/
+*.pyc
+
+.env
+
+config.json
+
+stable-diffusion/
+
